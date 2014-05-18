@@ -44,10 +44,6 @@ if ( $order ) : ?>
 				<?php _e( 'Date:', 'woocommerce' ); ?>
 				<strong><?php echo date_i18n( get_option( 'date_format' ), strtotime( $order->order_date ) ); ?></strong>
 			</li>
-			<li class="total">
-				<?php _e( 'Total:', 'woocommerce' ); ?>
-				<strong><?php echo $order->get_formatted_order_total(); ?></strong>
-			</li>
 			<?php if ( $order->payment_method_title ) : ?>
 			<li class="method">
 				<?php _e( 'Payment method:', 'woocommerce' ); ?>
